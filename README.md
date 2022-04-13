@@ -6,6 +6,10 @@ A generic but stupid bruce-force solver. Debuggable in VSCode.
 - define a problem (constraints, options, option effect, validation logic)
 
 ### TODOs
-- [x] Sorting
-- [ ] Sudoku
-- [ ] Tic-Tac-Toe
+- [ ] nCr
+- [ ] nPr
+- [ ] filters
+- Example
+  - [x] Sorting
+  - [ ] Sudoku
+  - [ ] Tic-Tac-Toe
