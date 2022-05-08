@@ -16,11 +16,15 @@ SET PATH=^
 
 @REM x86_64-8.1.0-release-win32-seh-rt_v6-rev0.7z
 
-cmake.exe -G"MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug -B./build
-
-cd build
-
-:rebuild_and_startapp
-mingw32-make.exe
+cmake.exe -G"MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug -B./build &&^
+cd build &&^
+cmake --build . &&^
+echo "Successful build"
 pause
-REM GOTO rebuild_and_startapp
+
+@REM cmake --build . --target ALL_BUILD --config Release -- /nologo /verbosity:minimal /maxcpucount
+
+@REM :rebuild_and_startapp
+@REM mingw32-make.exe
+@REM pause
+@REM REM GOTO rebuild_and_startapp
