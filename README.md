@@ -12,6 +12,7 @@ A generic but stupid bruce-force solver. Debuggable in VSCode.
 - Example
   - [x] Sorting
   - [ ] Sudoku
+    - [Sudoku, Go and WebAssembly - Eli Bendersky's website](https://eli.thegreenplace.net/2022/sudoku-go-and-webassembly/)
   - [ ] Tic-Tac-Toe
   - [ ] Scheduling
     - ```markdown
